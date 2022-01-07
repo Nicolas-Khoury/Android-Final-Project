@@ -107,7 +107,7 @@ class TicTacToe : AppCompatActivity() {
         AlertDialog.Builder(this)
             .setTitle(title)
             .setMessage(message)
-            .setPositiveButton("Reset")
+            .setPositiveButton("Reset Board")
             { _,_ ->
                 resetBoard()
             }

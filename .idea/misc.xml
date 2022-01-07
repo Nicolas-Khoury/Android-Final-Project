@@ -3,10 +3,16 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/Nicolas/AndroidStudioProjects/ProjectFinal/app/src/main/res/drawable/ic_baseline_games_24.xml" value="0.2703125" />
         <entry key="..\:/Users/Nicolas/AndroidStudioProjects/ProjectFinal/app/src/main/res/layout/activity_camera.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Nicolas/AndroidStudioProjects/ProjectFinal/app/src/main/res/layout/activity_main.xml" value="0.264" />
         <entry key="..\:/Users/Nicolas/AndroidStudioProjects/ProjectFinal/app/src/main/res/layout/activity_tic_tac_toe.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Nicolas/AndroidStudioProjects/ProjectFinal/app/src/main/res/layout/fragment_camera.xml" value="0.16032608695652173" />
+        <entry key="..\:/Users/Nicolas/AndroidStudioProjects/ProjectFinal/app/src/main/res/layout/fragment_games.xml" value="0.25" />
+        <entry key="..\:/Users/Nicolas/AndroidStudioProjects/ProjectFinal/app/src/main/res/layout/fragment_home.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Nicolas/AndroidStudioProjects/ProjectFinal/app/src/main/res/layout/fragment_maps.xml" value="0.15806159420289856" />
         <entry key="..\:/Users/Nicolas/AndroidStudioProjects/ProjectFinal/app/src/main/res/layout/fragment_tic_tac_toe.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Nicolas/AndroidStudioProjects/ProjectFinal/app/src/main/res/menu/bottom_menu.xml" value="0.25416666666666665" />
       </map>
     </option>
   </component>
