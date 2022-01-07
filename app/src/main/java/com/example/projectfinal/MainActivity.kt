@@ -17,4 +17,11 @@ class MainActivity : AppCompatActivity() {
         startActivity(intent)
 
     }
+    fun goCamera(sender: View)
+    {
+        val intent = Intent(this, Camera::class.java)
+
+        startActivity(intent)
+
+    }
 }
