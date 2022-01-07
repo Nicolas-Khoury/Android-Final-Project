@@ -7,6 +7,9 @@ import android.widget.Button
 import androidx.appcompat.app.AlertDialog
 import com.example.projectfinal.databinding.ActivityMainBinding
 import com.example.projectfinal.databinding.ActivityTicTacToeBinding
+import com.google.firebase.database.DatabaseReference
+import com.google.firebase.database.ktx.database
+import com.google.firebase.ktx.Firebase
 
 class TicTacToe : AppCompatActivity() {
 
@@ -22,9 +25,16 @@ class TicTacToe : AppCompatActivity() {
     private lateinit var binding : ActivityTicTacToeBinding
 
 
+    private lateinit var X: DatabaseReference
+    private lateinit var O: DatabaseReference
+
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
+        val database = Firebase.database
+        X = database.getReference("X")
+        O = database.getReference("O")
+
         super.onCreate(savedInstanceState)
         binding = ActivityTicTacToeBinding.inflate(layoutInflater)
         setContentView(binding.root)
@@ -52,9 +62,11 @@ class TicTacToe : AppCompatActivity() {
 
         if(checkForWinner(CIRCLE)){
             OScore++
+            O.setValue(OScore)
             result("Player O WINS!")}
         if(checkForWinner(CROSS)){
             XScore++
+            X.setValue(XScore)
             result("Player X WINS!")}
         if(fullBoard()){
             result("Draw")

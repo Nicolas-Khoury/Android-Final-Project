@@ -4,6 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
+import com.example.projectfinal.fragments.MapsFragment
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -17,9 +18,18 @@ class MainActivity : AppCompatActivity() {
         startActivity(intent)
 
     }
+
     fun goCamera(sender: View)
     {
         val intent = Intent(this, Camera::class.java)
+
+        startActivity(intent)
+
+    }
+
+    fun goMaps(sender: View)
+    {
+        val intent = Intent(this, MapsFragment::class.java)
 
         startActivity(intent)
 
